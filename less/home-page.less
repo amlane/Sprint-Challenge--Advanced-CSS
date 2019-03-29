@@ -101,13 +101,19 @@
         .custom-btn();
 
         @media @phone{
-          .custom-btn();
+          .custom-btn(@sea-shell, @btn-bg-color, 100%, 5rem, 5px, 1.6rem);
         }
 
         &:hover {
           .custom-btn(@btn-bg-color, @sea-shell)
+      }
+
+        @media @phone {
+        &:hover {
+          .custom-btn(@btn-bg-color, @sea-shell, 100%, 5rem, 5px, 1.6rem);
         }
       }
+     }
     }
 
     .walk-img {

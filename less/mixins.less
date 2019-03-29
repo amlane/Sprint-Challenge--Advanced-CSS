@@ -21,13 +21,13 @@
     align-items: @align;
 }
 
-.custom-btn(@btn-fontColor: @sea-shell, @btn-bgColor: @btn-bg-color){
+.custom-btn(@btn-fontColor: @sea-shell, @btn-bgColor: @btn-bg-color, @width: 31%, @height: 3.5rem, @b-radius: 5px, @fontSize: 2rem){
     color: @btn-fontColor;
     background: @btn-bgColor;
-    width: 31%;
-    height: 3.5rem;
-    border-radius: 5px;
-    font-size: 2rem;
+    width: @width;
+    height: @height;
+    border-radius: @b-radius;
+    font-size: @fontSize;
     .flexbox();
 }
 
