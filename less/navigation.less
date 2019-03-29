@@ -1,22 +1,21 @@
 // Navigation code here
 
 nav {
-    
     height: 100px;
-    .flexbox(space-evenly, center);
+    .flexbox(space-around, center);
     flex-direction: column;
     background: @nav-bg;
     border-bottom: 1px solid @nav-border;
 
         .title {
-        
         font-size: 4rem; 
         }
+
     .nav-links {
-        
-        width: 41%;
-        .flexbox(space-between, center);
+        width: 32%;
+        .flexbox(space-evenly, center);
     }
+    
     a {
         color: @nav-font;
         text-decoration: none;
