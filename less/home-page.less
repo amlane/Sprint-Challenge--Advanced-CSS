@@ -7,7 +7,6 @@
     @media @phone {
     .flexbox(center, flex-start);
     flex-direction: column;
-    .mobile-gutter();
     }
 
     img {
@@ -40,8 +39,7 @@
       height: 100%;
 
       @media @phone {
-        .image-size(85%, 85%);
-        .mobile-gutter(80%, 10%, 10%);
+        .image-size(100%, 100%);
       }
       }
 
@@ -57,7 +55,9 @@
     padding: 15px;
     
     @media @phone {
-      .mobile-gutter();
+      .mobile-gutter(99%, 0.5%, 0.5%);
+      padding-right: 1%;
+      padding-left: 1%;
     }
 
     h3 {
@@ -78,8 +78,9 @@
     
     @media @phone {
       flex-direction: column-reverse;
-      .mobile-gutter(95%, 2.5%, 2.5%);
+      // .mobile-gutter(95%, 2.5%, 2.5%);
       padding: 0;
+      margin-top: 0;
     }
 
     .walk-text {
@@ -101,7 +102,7 @@
         .custom-btn();
 
         @media @phone{
-          .custom-btn(@sea-shell, @btn-bg-color, 100%, 5rem, 5px, 1.6rem);
+          .custom-btn(@sea-shell, @btn-bg-color, 100%, 6rem, 5px, 1.8rem);
         }
 
         &:hover {
@@ -110,7 +111,7 @@
 
         @media @phone {
         &:hover {
-          .custom-btn(@btn-bg-color, @sea-shell, 100%, 5rem, 5px, 1.6rem);
+          .custom-btn(@btn-bg-color, @sea-shell, 100%, 6rem, 5px, 1.8rem);
         }
       }
      }
@@ -121,7 +122,7 @@
       margin-left: 4%;
 
       @media @phone {
-        .image-size();
+        .image-size(100%, 100%);
         margin-top: 20px;
         margin-bottom: 20px;
         .mobile-gutter();
