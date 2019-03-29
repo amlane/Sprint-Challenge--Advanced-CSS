@@ -4,10 +4,15 @@
     border: 1px solid red;
 }
 
-.mobile-gutter(){
-    width: 90%;
-    margin-right: 5%;
-    margin-left: 5%;
+.image-size(@width: 100%, @height: auto){
+    width: @width;
+    height: @height;
+}
+
+.mobile-gutter(@width: 90%, @marRight: 5%, @marLeft: 5%){
+    width: @width;
+    margin-right: @marRight;
+    margin-left: @marLeft;
 }
 
 .flexbox(@justify: center, @align: center){
