@@ -58,6 +58,11 @@
       }
 
       .btn {
+        .custom-btn();
+
+        &:hover {
+          .custom-btn(@btn-fontColor: @btn-bg-color, @btn-bgColor: @sea-shell)
+        }
       }
     }
 

@@ -4,9 +4,25 @@
     border: 1px solid red;
 }
 
+.mobile-gutter(){
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
 .flexbox(@justify: center, @align: center){
     display: flex;
     justify-content: @justify;
     align-items: @align;
+}
+
+.custom-btn(@btn-fontColor: @sea-shell, @btn-bgColor: @btn-bg-color){
+    color: @btn-fontColor;
+    background: @btn-bgColor;
+    width: 31%;
+    height: 3.5rem;
+    border-radius: 5px;
+    font-size: 2rem;
+    .flexbox();
 }
 
