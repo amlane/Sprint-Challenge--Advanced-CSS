@@ -37,7 +37,7 @@ Edit this document to include your answers after each question. Make sure to lea
     Responsive websites use responsive units, especially when it comes to width, allowing layouts to look great across thousands of viewport sizes. This takes more time and effort to plan and execute. 
 
 2. Describe what it means to be mobile first vs desktop first.
-    Mobile first means you develop/design the mobile version of your website first. A lot of developers like creating mobile first because it allows them to connect with more users faster.
+    Mobile first means you develop/design the mobile version of your website first and creating media queries moving up, rather than down. Rather than use the usual `max-width` you would use `min-width` when creating your media queries. A lot of developers like creating mobile first because it allows them to connect with more users faster. 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
     This allows 1rem =  10px. This will take the guess work out of setting responsive font size. Usibgn this logic 1.4rem = 14px, for example.
