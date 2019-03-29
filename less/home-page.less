@@ -126,20 +126,28 @@
         }
 
         &:hover {
-          .custom-btn(@btn-bg-color, @sea-shell)
+          .custom-btn(@btn-bg-color, @sea-shell);
+          border: 1px solid @btn-bg-color;
+          .animation();
 
+          @keyframes pulse {
+          0% {transform: scale(1);}
+          50% {transform: scale(1.1);}
+          100% {transform: scale(1);}
+          }
           
-      }
         @media @tablet {
           &:hover {
           margin: 0 auto;
-          .custom-btn( @btn-bg-color, @sea-shell, 90%, 6rem, 5px, 1.8rem);
+          .custom-btn(@btn-bg-color, @sea-shell, 90%, 6rem, 5px, 1.8rem);
+          border: 1px solid @btn-bg-color;
           }
         }
 
         @media @phone {
         &:hover {
           .custom-btn(@btn-bg-color, @sea-shell, 100%, 6rem, 5px, 1.8rem);
+          border: 1px solid @btn-bg-color;
         }
       }
      }
@@ -161,12 +169,13 @@
         margin-bottom: 40px;
         .mobile-gutter();
       }
-      
+      }
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
       }
-    }
+    
   }
+}
 }// home
