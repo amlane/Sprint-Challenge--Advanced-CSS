@@ -11,6 +11,7 @@
 
     img {
       border-radius: 5px;
+      margin-top: 100px;
 
        @media @tablet {
         .mobile-gutter(100%, 0, 0);
@@ -117,7 +118,7 @@
 
         @media @tablet {
           margin: 0 auto;
-          .custom-btn(@sea-shell, @btn-bg-color, 100%, 6rem, 5px, 1.8rem);
+          .custom-btn(@sea-shell, @btn-bg-color, 90%, 6rem, 5px, 1.8rem);
         }
 
         @media @phone{
@@ -126,11 +127,13 @@
 
         &:hover {
           .custom-btn(@btn-bg-color, @sea-shell)
+
+          
       }
         @media @tablet {
           &:hover {
           margin: 0 auto;
-          .custom-btn( @btn-bg-color, @sea-shell, 100%, 6rem, 5px, 1.8rem);
+          .custom-btn( @btn-bg-color, @sea-shell, 90%, 6rem, 5px, 1.8rem);
           }
         }
 
