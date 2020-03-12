@@ -4,6 +4,25 @@
 
   .intro {
 
+    @media @phone {
+    .flexbox(center, flex-start);
+    flex-direction: column;
+    }
+
+    img {
+      border-radius: 5px;
+      margin-top: 100px;
+
+       @media @tablet {
+        .mobile-gutter(100%, 0, 0);
+    }
+
+
+        @media @phone {
+          .image-size();        
+      }
+    }
+
     h2 {
       padding: 15px;
     }
@@ -24,11 +43,28 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone {
+        .image-size(100%, 100%);
+      }
+      }
+
+      .sky,
+      .launch {
+        @media @phone {
+          display: none;
+        }
     }
   }
 
   .visit-planets {
     padding: 15px;
+    
+    @media @phone {
+      .mobile-gutter(99%, 0.5%, 0.5%);
+      padding-right: 1%;
+      padding-left: 1%;
+    }
 
     h3 {
       margin-top: 11px;
@@ -45,9 +81,30 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    
+    @media @tablet {
+      padding-right: 0;
+      padding-left: 0;
+      flex-direction: column-reverse;
+      margin-top: 10px;
+    }
+    
+    @media @phone {
+      flex-direction: column-reverse;
+      padding: 0;
+      margin-top: 0;
+    }
 
     .walk-text {
       width: 50%;
+
+      @media @tablet {
+        width: 100%;
+      }
+
+      @media @phone {
+        .mobile-gutter();
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,18 +115,77 @@
       }
 
       .btn {
-      }
-    }
+        .custom-btn();
 
+        @media @tablet {
+          margin: 0 auto;
+          .custom-btn(@sea-shell, @btn-bg-color, 90%, 6rem, 5px, 1.8rem);
+        }
+
+        @media @phone{
+          .custom-btn(@sea-shell, @btn-bg-color, 100%, 6rem, 5px, 1.8rem);
+        }
+
+        &:hover {
+          .custom-btn(@btn-bg-color, @sea-shell);
+          border: 1px solid @btn-bg-color;
+          .animation();
+
+          @keyframes pulse {
+          0% {transform: scale(1);}
+          50% {transform: scale(1.1);}
+          100% {transform: scale(1);}
+          }
+          
+        @media @tablet {
+          &:hover {
+          margin: 0 auto;
+          .custom-btn(@btn-bg-color, @sea-shell, 90%, 6rem, 5px, 1.8rem);
+          border: 1px solid @btn-bg-color;
+          }
+        }
+
+        @media @phone {
+        &:hover {
+          .custom-btn(@btn-bg-color, @sea-shell, 100%, 6rem, 5px, 1.8rem);
+          border: 1px solid @btn-bg-color;
+        }
+      }
+     }
+    }
+}
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
-      img {
+
+      @media @tablet {
+        .image-size();
         width: 100%;
-        height: auto;
-        border-radius: 10px;
+        margin-bottom: 20px;
+        margin-left: 0;
+        .flexbox();
       }
-    }
+
+      @media @phone {
+        .image-size(100%, 100%);
+        margin-top: 20px;
+        margin-bottom: 40px;
+        .mobile-gutter();
+      }
+      img {
+        border-radius: 5px;
+
+        @media @tablet{
+          margin-top: -15px;
+          width: 90%;
+        }
+        @media @phone {
+          width: 100%;
+          padding-top: 20px;
+          padding-top: 0;
+          margin-top: 10px;
+        }
+      }
+    }   
   }
 }// home

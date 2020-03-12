@@ -1,1 +1,44 @@
 // Navigation code here
+
+nav {
+    height: 100px;
+    .flexbox(space-around, center);
+    flex-direction: column;
+    background: @nav-bg;
+    border-bottom: 1px solid @nav-border;
+    position: fixed;
+    width: 100%;
+    opacity: 0.7;
+
+
+    @media @phone{
+        .mobile-gutter();
+    }
+
+        .title {
+        font-size: 4rem; 
+        }
+
+    .nav-links {
+        width: 32%;
+        .flexbox(space-evenly, center);
+
+         @media @tablet {
+            width: 90%;
+        }
+         
+        @media @phone {
+            width: 100%;
+        }
+    }
+
+    a {
+        color: @nav-font;
+        text-decoration: none;
+        font-size: 1.6rem;
+
+        &:hover {
+        color: @waterloo;
+        }
+    }
+}

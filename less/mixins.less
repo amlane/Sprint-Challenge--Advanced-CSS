@@ -1,1 +1,40 @@
 // Mixins Here
+
+.test(){
+    border: 1px solid red;
+}
+
+.image-size(@width: 100%, @height: auto){
+    width: @width;
+    height: @height;
+}
+
+.mobile-gutter(@width: 90%, @marRight: 5%, @marLeft: 5%){
+    width: @width;
+    margin-right: @marRight;
+    margin-left: @marLeft;
+}
+
+.flexbox(@justify: center, @align: center){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.custom-btn(@btn-fontColor: @sea-shell, @btn-bgColor: @btn-bg-color, @width: 31%, @height: 3.5rem, @b-radius: 5px, @fontSize: 2rem){
+    color: @btn-fontColor;
+    background: @btn-bgColor;
+    width: @width;
+    height: @height;
+    border-radius: @b-radius;
+    font-size: @fontSize;
+    .flexbox();
+}
+
+.animation(){
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+

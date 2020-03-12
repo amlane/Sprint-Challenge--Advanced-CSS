@@ -33,14 +33,20 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+    Adapative websites are still hard coded at each media query and is a quick option for a project. 
+    Responsive websites use responsive units, especially when it comes to width, allowing layouts to look great across thousands of viewport sizes. This takes more time and effort to plan and execute. 
 
 2. Describe what it means to be mobile first vs desktop first.
+    Mobile first means you develop/design the mobile version of your website first and creating media queries moving up, rather than down. Rather than use the usual `max-width` you would use `min-width` when creating your media queries. A lot of developers like creating mobile first because it allows them to connect with more users faster. 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+    This allows 1rem =  10px. This will take the guess work out of setting responsive font size. Usibgn this logic 1.4rem = 14px, for example.
 
 4. How would you describe preprocessing to someone new to CSS?
+    Preprocessing is like Javascript functions and vanilla CSS had a baby. Preprocessing almost eliminates the risk of human error and takes the mystery out of nesting your selectors by combining the powers of javascript & CSS to write your code in a short hand syntax. For example, you can change the accent color on every element of your website by changing the value of one variable.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+    I love that it borrows from Javascript so much. It feels like preprocessors are a precouse to what we'll be learning next week. Parametrix mixins are my favorite concept. I like that I can take patterns I use for most of my layouts and create a library I can use over and over again. I'm not really struggling with preprocessing but I'm still working on improving how my layouts look across multiple devices. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
